@@ -1,0 +1,36 @@
+﻿@page "/indexpage"
+@using BlazorApp1.Web.Models;
+@using BlazorApp1.Web.Services;
+@inject ProductsService productsService
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@if (products != null)
+{
+    @foreach (var product in products)
+    {
+        <ul>@product.Name</ul>
+    }
+}
+
+@code{
+    private IEnumerable<ProductResponse> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await productsService.Get();
+    }
+
+    private async void IncrementCount()
+    {
+        products = await productsService.Get();
+    }
+}

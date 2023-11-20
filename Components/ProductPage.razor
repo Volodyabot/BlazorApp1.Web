@@ -1,0 +1,72 @@
+﻿@page "/product/{Id}"
+@using BlazorApp1.Web.Models;
+@using BlazorApp1.Web.Services;
+@inject ProductsService productsService
+@inject NavigationManager navigationManager
+
+@if (product != null)
+{
+
+    <div class="container mt-4">
+        <div class="main_content">
+            <div class="left_col_main">
+                <div class="showcase_image">
+                    @if ((product != null))
+                    {
+                        <img class="display_image" src="@product.ImageURL" alt="">
+                    }
+                </div>
+            </div>
+            <div class="right_col_main">
+                <div class="brand">Binoculars</div>
+                <h1 class="product_name">@product.Name</h1>
+                <p class="new_price">@product.Price.ToString("C")</p>
+                <div class="cart_buttons">
+                    <div class="quantity">
+                        <span class="qty_btn" @onclick="DecrementCount">-</span>
+                        <span class="qty_amount">@currentCount</span>
+                        <span class="qty_btn" @onclick="IncrementCount">+</span>
+                    </div>
+                    <div class="add_to_cart">
+                        <span>Add to cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="description">
+            @product.Description
+        </p>
+    </div>
+}
+else
+{
+    <p style="position: absolute; top: 40%;left: 50%; transform: translate(-50%, -50%);">Product not found</p>
+}
+
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private ProductResponse product;
+
+    private int currentCount = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await productsService.Get(new Guid(Id));
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void DecrementCount()
+    {
+        if(currentCount > 0)
+        {
+            currentCount--;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+﻿
+/* Add your custom styles here */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main_content {
+    margin: 0 auto;
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    max-width: 900px;
+}
+
+.showcase_image {
+    max-width: 500px;
+    width: 400px;
+}
+
+    .showcase_image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+.left_col_main {
+    max-width: 70%;
+}
+
+.right_col_main {
+    max-width: 70%;
+}
+
+/* =========== */
+
+.right_col_main {
+    display: grid;
+    gap: 20px;
+}
+
+.brand {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.product_name {
+    font-size: 2.5em;
+    color: white;
+}
+
+.description {
+    margin-top:50px;
+    color: white;
+    line-height: 1.7em;
+}
+
+
+.discount_amount {
+    padding: 2px 6px;
+    border-radius: 2px 7px;
+    color: var(--orange);
+    background-color: var(--pale_orange);
+}
+
+.new_price {
+    font-size: 1.5em;
+    color: #e44d26;
+    font-weight: bold;
+}
+
+
+.cart {
+    position: relative;
+}
+
+.cart_buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quantity {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    padding: 10px 15px;
+    background-color: #333;
+    border-radius: 10px;
+    border: 1px solid rgba(100,100,100,0.9);
+}
+
+
+.qty_btn {
+    color: #e44d26;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+    .qty_btn:hover {
+        opacity: 0.5;
+    }
+
+.qty_amount {
+    color:white;
+}
+
+.add_to_cart {
+    background: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 70px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s;
+}
+    .add_to_cart:hover {
+        color: #e44d26;
+        box-shadow: 0 0 10px rgba(228, 77, 38, 0.25); /* Add a stronger shadow on hover */
+    }
+
+
+@media screen and (max-width: 767px) {
+    .main_content {
+        margin: 0 auto;
+        margin-top: 4em;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap: 4em;
+        max-width: 900px;
+    }
+
+
+    .showcase_image {
+        //max-width: 500px;
+        width: auto;
+    }
+
+        .showcase_image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    .cart_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

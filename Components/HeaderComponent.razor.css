@@ -1,0 +1,134 @@
+﻿@media screen and (min-width: 768px) {
+    .top-nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav-buttons {
+        display: flex;
+    }
+
+    .nav-button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+        .nav-button:hover {
+            color: #ff5733; /* Change the color on hover */
+        }
+
+    .additional-content {
+        /* Add styles for additional content or buttons */
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .menu-buttons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .menu-buttons {
+        display: none;
+    }
+        .menu-buttons.open {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.4s;
+        }
+    .nav-button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 10px 10px;
+        cursor: pointer;
+    }
+    .nav-button:hover {
+        color: #ff5733; /* Change the color on hover */
+    }
+}
+
+
+.burger-menu {
+    cursor: pointer;
+    //display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Styles for the open state of the burger menu */
+.burger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.burger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -7px);
+}

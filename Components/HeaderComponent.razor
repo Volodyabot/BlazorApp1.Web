@@ -1,0 +1,48 @@
+﻿
+
+<div class="top-nav">
+    <div class="logo-container">
+        <!-- <img src="your-logo.png" alt="Your Logo" class="logo" /> -->
+        <span class="brand-name">Binoculars</span>
+    </div>
+    <div class="nav-buttons">
+        <NavLink href="">
+            <button class="nav-button" data-route="/">Home</button>
+        </NavLink>
+        <button class="nav-button" data-route="/shop">Shop</button>
+        <button class="nav-button" data-route="/products">Products</button>
+        <button class="nav-button" data-route="/about">About Us</button>
+        <button class="nav-button" data-route="/contact">Contact</button>
+        <NavLink href="/admin">
+            <button class="nav-button">Admin</button>
+        </NavLink>
+    </div>
+    <div class="additional-content">
+        <!-- You can add additional content or buttons here -->
+        <div class="burger-menu @openCssClass" @onclick=ToggleNavMenu>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</div>
+<div class="menu-buttons @openCssClass">
+    <NavLink href="" @onclick=ToggleNavMenu>
+        <button class="nav-button" data-route="/">Home</button>
+    </NavLink>
+    <button class="nav-button" data-route="/shop">Shop</button>
+    <button class="nav-button" data-route="/products">Products</button>
+    <button class="nav-button" data-route="/about">About Us</button>
+    <button class="nav-button" data-route="/contact">Contact</button>
+</div>
+
+@code {
+    bool collapseNavMenu = false;
+
+    string openCssClass => collapseNavMenu ? "open" : null;
+
+    void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

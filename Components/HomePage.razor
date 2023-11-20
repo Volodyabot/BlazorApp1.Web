@@ -1,0 +1,81 @@
+﻿@page "/"
+@using BlazorApp1.Web.Models;
+@using BlazorApp1.Web.Services;
+@inject ProductsService productsService
+@inject NavigationManager NavigationManager
+
+
+<div class="search-container">
+    <input type="text" placeholder="Search..." @bind="searchQuery" @oninput="HandleSearch" />
+    <button @onclick="Search">Search</button>
+</div>
+
+
+
+<div class="product-wrapper">
+
+    <div class="product-container">
+
+        @if (Products != null)
+        {
+
+            @foreach (var product in Products)
+            {
+                <div class="product-tile" @onclick="() => NavigateToProductPage(product.Id)">
+                    <div class="image-container">
+                        <img src="@product.ImageURL" alt="@product.Name" class="product-image" />
+                    </div>
+                    <div class="product-details">
+                        <h4>@product.Name</h4>
+                        <p class="price">@product.Price.ToString("C")</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No products available.</p>
+        }
+    </div>
+</div>
+
+
+
+
+
+@code {
+    private IEnumerable<ProductResponse> Products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Products = await productsService.Get();
+    }
+
+    private void NavigateToCreatePage()
+    {
+        NavigationManager.NavigateTo($"/create");
+    }
+
+    private void NavigateToProductPage(Guid id)
+    {
+        // Navigate to the Products page with the selected product's ID
+        NavigationManager.NavigateTo($"/product/{id}");
+    }
+
+    // SEARCH
+    private string searchQuery;
+
+    private async Task Search()
+    {
+        Products = await productsService.Get(searchQuery);
+    }
+
+    private void HandleSearch(ChangeEventArgs e)
+    {
+        // Update the searchQuery as the user types
+        searchQuery = e.Value?.ToString();
+
+        // Trigger the search immediately on each input change
+        Search();
+    }
+}

@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorApp1.Web
+build_property.RootNamespace = BlazorApp1.Web
+build_property.ProjectDir = c:\Users\volod\source\repos\BlazorApp1.Web\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\volod\source\repos\BlazorApp1.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/AdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZG1pblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jmd1ttutg4
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/CreateProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDcmVhdGVQcm9kdWN0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2dkryvi897
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/DefaultLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEZWZhdWx0TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-uklfwualtz
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/FooterComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXJDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ldu5xl3788
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/HeaderComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXJDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9i9cc14g89
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/HomePage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIb21lUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ssujqn2iw1
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Components/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9kdWN0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-c5cdyep2rh
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-dpacsw4b8i
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-x8nkrxf5se
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/volod/source/repos/BlazorApp1.Web/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
